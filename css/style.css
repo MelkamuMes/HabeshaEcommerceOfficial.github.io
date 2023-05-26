@@ -1,0 +1,630 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  overflow-x: hidden;
+  font-family: sans-serif;
+}
+
+.landingpage {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  background: #dddddd;
+}
+
+.All_nav_bar {
+  position: relative;
+  height: 28vh;
+  width: 100%;
+  contain: content;
+  background: #dddddd;
+}
+
+.first_nav_bar {
+  position: relative;
+  margin-bottom: 8px;
+  margin-top: 20px;
+}
+
+.first_nav_bar .logo {
+  position: relative;
+  left: -20vw;
+  width: 65px;
+  height: 45px;
+  border-radius: 50%;
+  contain: content;
+  text-align: center;
+  padding-top: 15px;
+  background-color: #a5432a;
+}
+
+.first_nav_bar .log-sign {
+  position: relative;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  left: 7%;
+}
+.first_nav_bar .log-sign .log-sign span {
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.first_nav_bar ul {
+  position: relative;
+  display: flex;
+  left: 13%;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 18px;
+}
+
+.first_nav_bar ul li {
+  position: relative;
+  justify-content: right;
+  padding-right: 10px;
+  margin-right: 10px;
+  list-style: none;
+  padding: 8px 40px;
+  background-color: #a5432a;
+  outline: none;
+  cursor: pointer;
+}
+
+.first_nav_bar ul li a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.Search_bar {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  max-width: 600px;
+  left: 25%;
+  outline: none;
+  cursor: pointer;
+}
+.Search_bar #cart {
+  position: relative;
+  background-color: #fff;
+  left: 40%;
+  border-radius: 60px;
+  contain: content;
+}
+.Search_bar #cart img {
+  width: 50px;
+}
+.Search_bar #cart button {
+  left: 40%;
+  outline: none;
+  cursor: pointer;
+}
+
+.Search_bar input {
+  border-top-left-radius: 60px;
+  border-bottom-left-radius: 60px;
+  width: 70px;
+  height: 40px;
+  size: 2;
+  flex: 1;
+  border: 0;
+  outline: none;
+}
+
+::-moz-placeholder {
+  position: relative;
+  align-items: center;
+  padding-left: 10px;
+}
+
+::placeholder {
+  position: relative;
+  align-items: center;
+  padding-left: 10px;
+}
+
+
+.Search_bar button {
+  border: 0;
+  border-top-right-radius: 60px;
+  border-bottom-right-radius: 60px;
+  width: 60px;
+  height: 40px;
+  background-color: #a5432a;
+  cursor: pointer;
+}
+
+.Search_bar button img {
+  width: 20px;
+  border-radius: 50%;
+}
+
+.second_nav_catagories {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+
+.second_nav_catagories ul {
+  position: relative;
+  display: flex;
+  padding: 10px;
+  justify-content: space-evenly;
+}
+
+.second_nav_catagories ul li {
+  position: relative;
+  list-style: none;
+  outline: none;
+  cursor: pointer;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-right: 1.6rem;
+  left: 11.4%;
+  padding: 15px 46.5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #a5432a;
+}
+
+.second_nav_catagories ul li a {
+  position: relative;
+  text-decoration: none;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+}
+
+.outer {
+  position: relative;
+  margin-top: 10px;
+  width: 80%;
+  height: 70%;
+  margin-left: 10%;
+  background-image: url(/img/hager2.jpg);
+  background-size: 1090px 690px;
+}
+.outer h1 {
+  position: relative;
+  top: 15%;
+  left: 15%;
+  font-size: 65px;
+  color: #ff7b00;
+}
+.outer h3 {
+  position: relative;
+  top: 20%;
+  left: 20%;
+  font-size: 40px;
+  font-weight: lighter;
+  color: #a76959;
+}
+
+@media (max-width: 576px) {
+  .outer {
+    position: relative;
+    top: 25%;
+    height: 400px;
+    left: 0;
+    margin-left: 4%;
+    width: 91vw;
+    background-size: 300px 500px;
+  }
+  .outer h1 {
+    top: 35%;
+    font-size: 29px;
+  }
+  .outer h3 {
+    top: 40%;
+    font-size: 17px;
+  }
+  .All_nav_bar {
+    display: block;
+  }
+  .first_nav_bar ul li {
+    display: block;
+    outline: none;
+    cursor: pointer;
+  }
+  #Search_bar {
+    position: absolute;
+    background-color: #a5432a;
+    height: 10%;
+    width: 200px;
+    top: 10%;
+    left: 40px;
+    text-align: left;
+    outline: none;
+    cursor: pointer;
+    z-index: 2;
+    transition: 1s;
+  }
+  #Search_bar #cart {
+    position: relative;
+    left: 0px;
+  }
+  .first_nav_bar #Search_bar input {
+    width: 100px;
+    height: 40px;
+    size: 1;
+    flex: 1;
+    border: 0;
+    outline: none;
+  }
+  .second_nav_catagories ul li {
+    display: block;
+    outline: none;
+    cursor: pointer;
+  }
+  .All_nav_bar {
+    position: absolute;
+    background-color: #a5432a;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+  }
+  .first_nav_bar {
+    position: absolute;
+    background-color: #a5432a;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+}
+.new_arrival {
+  position: relative;
+  height: 100vh;
+}
+
+.new_arrival_title {
+  position: relative;
+  top: 6vh;
+  height: 10vh;
+  left: 15%;
+  width: 70vw;
+  padding-left: 25%;
+  background-color: #a05d31;
+}
+
+.new_arrival_title h3 {
+  padding-top: 20px;
+  font-size: 25px;
+}
+
+.new_arrival_title span h3 {
+  position: relative;
+  top: 15%;
+  height: 8vh;
+  width: 25vw;
+  padding-left: 15%;
+  background-color: #fff;
+}
+
+.new_arrival_box {
+  position: relative;
+  display: flex;
+  left: 15%;
+  top: 7%;
+  background-color: #a05d31;
+  height: 35vh;
+  width: 70vw;
+  padding: 20px;
+}
+
+.new_arrival_items {
+  position: relative;
+  background-color: #9e9d9d;
+  height: 100%;
+  width: 40%;
+  left: 5%;
+  margin-left: 25px;
+  contain: content;
+}
+
+.new_arrival_items button {
+  position: relative;
+  width: 100%;
+  height: 25%;
+  top: 75%;
+  outline: none;
+  cursor: pointer;
+}
+
+.product {
+  position: relative;
+  height: 170vh;
+  background-color: #a05d31;
+}
+
+.product_title {
+  position: relative;
+  top: 0%;
+  height: 8vh;
+  padding-left: 38%;
+  background-color: #a05d31;
+}
+
+.product_title h3 {
+  padding-top: 10px;
+  font-size: 25px;
+}
+
+.product_title span h3 {
+  position: relative;
+  top: 15%;
+  height: 8vh;
+  width: 25vw;
+  padding-left: 15%;
+  background-color: #ffffff;
+}
+
+.product_box {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  top: 0%;
+  background-color: #a05d31;
+  height: 45vh;
+  width: 98vw;
+  padding: 35px;
+  padding-left: 55px;
+  padding-right: 55px;
+}
+
+.product_item {
+  background-color: #9e9d9d;
+  height: 100%;
+  width: 35%;
+  left: 5%;
+  margin-left: 10px;
+  contain: content;
+}
+
+.product .product_item button {
+  position: relative;
+  width: 100%;
+  height: 25%;
+  top: 75%;
+  left: 0%;
+  outline: none;
+  cursor: pointer;
+}
+
+.product button {
+  position: absolute;
+  padding: 15px 45px;
+  left: 44%;
+  top: 90%;
+}
+
+.Contact_Us {
+  position: relative;
+  height: 80vh;
+  background-color: #9e9d9d;
+}
+
+.ContactUs_box {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  top: 2%;
+  background-color: #9e9d9d;
+  height: 80vh;
+  width: 100vw;
+  padding: 35px;
+  padding-left: 55px;
+  padding-right: 55px;
+}
+
+.ContactPayment_box {
+  background-color: #9e9d9d;
+  height: 100%;
+  width: 35%;
+  left: 5%;
+  margin-left: 10px;
+  contain: content;
+}
+
+.ContactPayment_box span h3 {
+  position: relative;
+  top: 0%;
+  height: 8vh;
+  width: 25vw;
+  padding-left: 35%;
+  padding-top: 10px;
+  color: #fff;
+  background-color: #a05d31;
+}
+
+.ContactPayment_box button {
+  position: relative;
+  padding: 10px 35px;
+  left: 4%;
+  top: 20%;
+  margin: 4%;
+  contain: content;
+  outline: none;
+  background-color: #fff;
+  cursor: pointer;
+  border: none;
+}
+
+.ContactPayment_box button img {
+  width: 55px;
+  height: 45px;
+}
+
+.SiteMap_box {
+  background-color: #9e9d9d;
+  height: 100%;
+  width: 35%;
+  left: 5%;
+  margin-left: 10px;
+  contain: content;
+}
+
+.SiteMap_box span h3 {
+  position: relative;
+  top: 0%;
+  height: 8vh;
+  width: 25vw;
+  padding-left: 35%;
+  padding-top: 10px;
+  color: #fff;
+  background-color: #a05d31;
+}
+
+.SiteMap_box ul {
+  margin: 50px 80px;
+}
+
+.SiteMap_box ul li {
+  padding-top: 20px;
+  list-style: disc;
+  list-style-position: 10px;
+}
+
+.SiteMap_box ul li a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.SocialMedia_box {
+  background-color: #9e9d9d;
+  height: 100%;
+  width: 35%;
+  left: 5%;
+  margin-left: 10px;
+  contain: content;
+}
+
+.SocialMedia_box span h3 {
+  position: relative;
+  top: 0%;
+  height: 8vh;
+  width: 25vw;
+  padding-left: 35%;
+  padding-top: 10px;
+  color: #fff;
+  background-color: #a05d31;
+}
+
+.SocialMedia_box ul {
+  margin: 50px 80px;
+}
+
+.SocialMedia_box ul li {
+  padding-top: 20px;
+  list-style: disc;
+  list-style-position: 10px;
+}
+
+.SocialMedia_box ul li a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.OurOffice_box {
+  background-color: #9e9d9d;
+  height: 100%;
+  width: 35%;
+  left: 5%;
+  margin-left: 10px;
+  contain: content;
+}
+
+.OurOffice_box .logo h3 {
+  position: relative;
+  left: 0%;
+  border-radius: 50%;
+  contain: content;
+  text-align: center;
+  margin: 0px 10px;
+  padding: 25px 0px;
+  color: #fff;
+  background-color: #a05d31;
+}
+
+.OurOffice_box ul {
+  margin: 50px 80px;
+}
+
+.OurOffice_box ul li {
+  padding-top: 20px;
+  list-style: disc;
+  list-style-position: 10px;
+}
+
+.OurOffice_box ul li a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.FAQs_container {
+  position: relative;
+  height: 60vh;
+  background-color: #a05d31;
+}
+
+.FAQs_container_box {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  top: 0%;
+  background-color: #a05d31;
+  height: 60vh;
+  width: 98vw;
+  padding: 35px;
+  padding-left: 55px;
+  padding-right: 55px;
+}
+
+.FAQs_box_EachContainer {
+  background-color: #9e9d9d;
+  height: 100%;
+  width: 35%;
+  left: 5%;
+  margin-left: 10px;
+  contain: content;
+}
+
+.FAQs_box_EachContainer ul {
+  margin: 50px 80px;
+}
+
+.FAQs_box_EachContainer ul li {
+  padding-top: 20px;
+  list-style: disc;
+  list-style-position: 10px;
+}
+
+.FAQs_box_EachContainer ul li a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.copyright {
+  position: relative;
+  height: 5vh;
+  background-color: #1f1a17;
+}
+
+.copyright p {
+  padding-left: 40%;
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */
